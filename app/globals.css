@@ -2,32 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: radial-gradient(#ecedf125 20%, #21232b37 30%, white 30%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  height: 100%;
+  width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.buttonShadow {
+  /* Première ombre portée (Drop shadow 1) */
+  box-shadow: inset 0px -2.94px 0.74px 0px rgba(227, 227, 234, 0.4),
+    0px 2.94px 5.88px -1.47px rgba(95, 95, 95, 0.15),
+    0px 0px 0px 0.74px rgba(234, 236, 241, 0.1);
 }
